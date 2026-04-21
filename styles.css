@@ -67,8 +67,7 @@ a {
 
 .brand,
 .kicker,
-.tag,
-.timeline-date {
+.tag {
   font-family: "JetBrains Mono", monospace;
   letter-spacing: -0.02em;
 }
@@ -417,21 +416,29 @@ h3 {
 }
 
 .timeline-item {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 1.4rem;
   border-radius: 28px;
   padding: 1.35rem;
 }
 
-.timeline-date {
-  color: var(--blue);
-  font-size: 0.9rem;
+.experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: -0.25rem 0 0.65rem;
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.86rem;
 }
 
-.role {
-  color: #dbeafe;
-  margin-bottom: 0.65rem;
+.experience-meta span:first-child {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.experience-meta span:not(:last-child)::after {
+  content: "|";
+  color: rgba(255, 255, 255, 0.32);
+  margin-left: 0.45rem;
 }
 
 .experience-list {
