@@ -280,14 +280,14 @@ h3 {
   margin-bottom: 1.8rem;
 }
 
-.fit-grid,
+.rag-grid,
 .loop-grid,
 .project-grid {
   display: grid;
   gap: 1rem;
 }
 
-.fit-grid,
+.rag-grid,
 .project-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -469,7 +469,7 @@ h3 {
 
 @media (max-width: 980px) {
   .hero,
-  .fit-grid,
+  .rag-grid,
   .loop-grid,
   .project-grid,
   .timeline-item {
