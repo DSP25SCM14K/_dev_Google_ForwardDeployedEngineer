@@ -340,6 +340,7 @@ h3 {
   font-family: "JetBrains Mono", monospace;
   font-size: 18px;
   font-weight: 700;
+  text-anchor: middle;
 }
 
 .diagram-card line {
@@ -403,6 +404,30 @@ h3 {
 .role {
   color: #dbeafe;
   margin-bottom: 0.65rem;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+}
+
+.link-row a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #dbeafe;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.55rem 0.75rem;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.link-row a:hover {
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .passion-panel {
