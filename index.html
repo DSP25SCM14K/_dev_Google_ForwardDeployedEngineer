@@ -122,7 +122,7 @@
           <h2>Agentic RAG architecture I’m excited to build and deploy.</h2>
         </div>
         <div class="diagram-card reveal">
-          <svg viewBox="0 0 1060 500" role="img" aria-label="Agentic RAG production architecture diagram">
+          <svg viewBox="0 0 1120 520" role="img" aria-label="Agentic RAG production architecture diagram">
             <defs>
               <linearGradient id="nodeDark" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#1e293b" />
@@ -132,44 +132,51 @@
                 <stop offset="0%" stop-color="#4285f4" />
                 <stop offset="100%" stop-color="#34a853" />
               </linearGradient>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(255,255,255,0.72)" />
+              </marker>
             </defs>
 
-            <rect x="30" y="180" width="160" height="100" rx="24" class="node input" />
-            <text x="110" y="220">Customer</text>
-            <text x="110" y="248">Workflow</text>
+            <rect x="24" y="206" width="170" height="96" rx="26" class="node input" />
+            <circle cx="68" cy="254" r="16" class="dot blue-dot" />
+            <text x="124" y="244">Customer</text>
+            <text x="124" y="270">Workflow</text>
 
-            <rect x="260" y="140" width="190" height="180" rx="28" class="node orchestrator" />
-            <text x="355" y="185">LangGraph</text>
-            <text x="355" y="218">Agent Router</text>
-            <text x="355" y="252">ReAct Loop</text>
-            <text x="355" y="286">State + Memory</text>
+            <rect x="290" y="160" width="230" height="188" rx="34" class="node orchestrator" />
+            <text x="405" y="207" class="node-title">LangGraph</text>
+            <text x="405" y="239">Agent Router</text>
+            <text x="405" y="270">ReAct Loop</text>
+            <text x="405" y="301">State + Memory</text>
 
-            <rect x="525" y="55" width="180" height="86" rx="22" class="node tool" />
-            <text x="615" y="95">RAG Retrieval</text>
-            <text x="615" y="120">Vector + BM25</text>
+            <rect x="630" y="48" width="220" height="98" rx="26" class="node tool" />
+            <circle cx="670" cy="97" r="13" class="dot green-dot" />
+            <text x="746" y="88">RAG Retrieval</text>
+            <text x="746" y="116">Vector + BM25</text>
 
-            <rect x="525" y="207" width="180" height="86" rx="22" class="node tool" />
-            <text x="615" y="247">Tool Use</text>
-            <text x="615" y="272">APIs + MCP</text>
+            <rect x="630" y="205" width="220" height="98" rx="26" class="node tool" />
+            <circle cx="670" cy="254" r="13" class="dot yellow-dot" />
+            <text x="746" y="245">Tool Use</text>
+            <text x="746" y="273">APIs + MCP</text>
 
-            <rect x="525" y="359" width="180" height="86" rx="22" class="node tool" />
-            <text x="615" y="399">Evaluation</text>
-            <text x="615" y="424">Safety + Latency</text>
+            <rect x="630" y="362" width="220" height="98" rx="26" class="node tool" />
+            <circle cx="670" cy="411" r="13" class="dot red-dot" />
+            <text x="746" y="402">Evaluation</text>
+            <text x="746" y="430">Safety Checks</text>
 
-            <rect x="800" y="145" width="220" height="210" rx="30" class="node deploy" />
-            <text x="910" y="195">Production Layer</text>
-            <text x="910" y="230">Tracing</text>
-            <text x="910" y="260">Cost Metrics</text>
-            <text x="910" y="290">SLA Monitoring</text>
-            <text x="910" y="320">Reusable Modules</text>
+            <rect x="940" y="148" width="160" height="212" rx="32" class="node deploy" />
+            <text x="1020" y="195" class="node-title">Production</text>
+            <text x="1020" y="226">Tracing</text>
+            <text x="1020" y="255">Cost Metrics</text>
+            <text x="1020" y="284">SLA Watch</text>
+            <text x="1020" y="313">Modules</text>
 
-            <line x1="190" y1="230" x2="260" y2="230" />
-            <line x1="450" y1="230" x2="525" y2="98" />
-            <line x1="450" y1="230" x2="525" y2="250" />
-            <line x1="450" y1="230" x2="525" y2="402" />
-            <line x1="705" y1="98" x2="800" y2="190" />
-            <line x1="705" y1="250" x2="800" y2="250" />
-            <line x1="705" y1="402" x2="800" y2="310" />
+            <path d="M 194 254 L 286 254" />
+            <path d="M 520 254 C 565 254 580 98 626 98" />
+            <path d="M 520 254 L 626 254" />
+            <path d="M 520 254 C 565 254 580 410 626 410" />
+            <path d="M 850 98 C 900 98 890 190 936 190" />
+            <path d="M 850 254 L 936 254" />
+            <path d="M 850 410 C 900 410 890 318 936 318" />
           </svg>
         </div>
       </section>

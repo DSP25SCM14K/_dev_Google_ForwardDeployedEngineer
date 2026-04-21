@@ -338,20 +338,27 @@ h3 {
 .diagram-card text {
   fill: #fff;
   font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-anchor: middle;
 }
 
-.diagram-card line {
+.diagram-card path {
+  fill: none;
   stroke: rgba(255, 255, 255, 0.64);
-  stroke-width: 5;
+  stroke-width: 4;
   stroke-linecap: round;
+  marker-end: url(#arrow);
 }
 
 .node {
   stroke: rgba(255, 255, 255, 0.18);
   stroke-width: 2;
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.22));
+}
+
+.node-title {
+  font-size: 17px;
 }
 
 .input {
@@ -368,6 +375,27 @@ h3 {
 
 .deploy {
   fill: #111827;
+}
+
+.dot {
+  stroke: rgba(255, 255, 255, 0.32);
+  stroke-width: 2;
+}
+
+.blue-dot {
+  fill: var(--blue);
+}
+
+.green-dot {
+  fill: var(--green);
+}
+
+.yellow-dot {
+  fill: var(--yellow);
+}
+
+.red-dot {
+  fill: var(--red);
 }
 
 .loop-grid {
